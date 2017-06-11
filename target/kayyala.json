@@ -1,0 +1,82 @@
+[
+  {
+    "id": "as-a-user-i-need-to-order-pizza",
+    "description": "as a customer\r\ni want order pizza so that\r\ni can order online",
+    "name": "as a user i need to order pizza",
+    "keyword": "Feature",
+    "line": 1,
+    "elements": [
+      {
+        "id": "as-a-user-i-need-to-order-pizza;create-new-registration",
+        "before": [
+          {
+            "result": {
+              "duration": 10169878049,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "description": "",
+        "name": "create new registration",
+        "keyword": "Scenario",
+        "line": 6,
+        "steps": [
+          {
+            "result": {
+              "duration": 1593820216,
+              "status": "passed"
+            },
+            "name": "I am navigative to dominos web page",
+            "keyword": "Given ",
+            "line": 7,
+            "match": {
+              "location": "StepDef.i_am_navigative_to_dominos_web_page()"
+            }
+          },
+          {
+            "result": {
+              "duration": 915963771,
+              "status": "passed"
+            },
+            "name": "i am click on register and enter fields",
+            "keyword": "And ",
+            "line": 8,
+            "match": {
+              "location": "StepDef.i_am_click_on_register_and_enter_fields()"
+            }
+          },
+          {
+            "result": {
+              "duration": 6274772642,
+              "status": "passed"
+            },
+            "name": "I contacting by email or SMS",
+            "keyword": "Then ",
+            "line": 9,
+            "match": {
+              "location": "StepDef.i_contacting_by_email_or_SMS()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2691196876,
+              "status": "failed",
+              "error_message": "org.junit.ComparisonFailure: expected:\u003craj[u]kumar\u003e but was:\u003craj[]kumar\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat checkingAC.accountvf(checkingAC.java:12)\r\n\tat StepDef.i_conform_the_account_and_logout(StepDef.java:33)\r\n\tat ✽.And i conform the account and logout(register.feature:10)\r\n"
+            },
+            "name": "i conform the account and logout",
+            "keyword": "And ",
+            "line": 10,
+            "match": {
+              "location": "StepDef.i_conform_the_account_and_logout()"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "register.feature"
+  }
+]
